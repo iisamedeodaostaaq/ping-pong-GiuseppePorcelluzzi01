@@ -1,3 +1,4 @@
+## Prof. Codice privo di commenti: non manutenibile
 x=50
 y=80
 verY=1
@@ -20,6 +21,7 @@ def draw():
     x=x+2*verX
     y=y+2*verY
     #fa rimbalzare la pallina sul muro (4 if)
+## Prof.: Utilizza variabili per valori a cui ti riferisci nel codice piuttosto che usare numeri (vedi il raggio della pallina
     if (y+10>height):
         verY=-1
     if (x+10>width):
@@ -35,7 +37,11 @@ def draw():
         verY=1 
         
 def keyPressed():
+ ## Prof.: La racchetta finisce fuori dello schermo
+
     global xrect1,xrect2 #dichiarare globale solo se deve essere modificato il valore
+ ## Prof.: Non usare i commenti per spiegare il funzionamento del linguaggio
+
     #fa muovere la racchetta
     if keyCode==LEFT:
         xrect1=xrect1-7
